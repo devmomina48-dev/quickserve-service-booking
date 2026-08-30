@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuickServe - Book a Service</title>
+
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-circle">QS</span>
+            <span>QuickServe</span>
+        </a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li>
+                <a href="providers.html">Providers</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
+
+        <div class="auth-buttons">
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+            <a href="signup.html" class="signup-btn">
+                Sign Up
+            </a>
+
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="hamburger">
+            ☰
+        </label>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= BOOKING HERO ================= -->
+
+<section class="booking-hero">
+
+    <div class="booking-heading">
+
+        <span>
+            QUICK & EASY BOOKING
+        </span>
+
+        <h1>
+            Book Your
+            <br>
+            Service Today.
+        </h1>
+
+        <p>
+            Choose your preferred service, select a date and
+            provide your details. We'll take care of the rest.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKING SECTION ================= -->
+
+<section class="booking-section">
+
+    <div class="booking-container">
+
+
+        <!-- LEFT : FORM -->
+
+        <div class="booking-form">
+
+            <span class="section-label">
+                BOOKING DETAILS
+            </span>
+
+            <h2>
+                Tell us what you need
+            </h2>
+
+            <p class="form-description">
+                Fill in the details below to request your service.
+            </p>
+
+
+            <form id="bookingForm">
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- SERVICE -->
+
+                <div class="form-group">
+
+                    <label for="service">
+                        Select Service
+                    </label>
+
+                    <select id="service" required>
+
+                        <option value="">
+                            Choose a service
+                        </option>
+
+                        <option value="Home Cleaning">
+                            Home Cleaning
+                        </option>
+
+                        <option value="Electrician">
+                            Electrician
+                        </option>
+
+                        <option value="Plumbing">
+                            Plumbing
+                        </option>
+
+                        <option value="AC Repair">
+                            AC Repair
+                        </option>
+
+                        <option value="Beauty & Salon">
+                            Beauty & Salon
+                        </option>
+
+                        <option value="Painting">
+                            Painting
+                        </option>
+
+                        <option value="Home Tutor">
+                            Home Tutor
+                        </option>
+
+                        <option value="Appliance Repair">
+                            Appliance Repair
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- DATE + TIME -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="time">
+                            Preferred Time
+                        </label>
+
+                        <select id="time" required>
+
+                            <option value="">
+                                Select time
+                            </option>
+
+                            <option>
+                                09:00 AM
+                            </option>
+
+                            <option>
+                                11:00 AM
+                            </option>
+
+                            <option>
+                                01:00 PM
+                            </option>
+
+                            <option>
+                                03:00 PM
+                            </option>
+
+                            <option>
+                                05:00 PM
+                            </option>
+
+                            <option>
+                                07:00 PM
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ADDRESS -->
+
+                <div class="form-group">
+
+                    <label for="address">
+                        Service Address
+                    </label>
+
+                    <input
+                        type="text"
+                        id="address"
+                        placeholder="Enter your address"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Additional Details
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Tell us anything the provider should know..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="confirm-btn"
+                >
+
+                    Confirm Booking
+
+                    <span>→</span>
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+
+        <!-- RIGHT : SUMMARY -->
+
+        <aside class="booking-summary">
+
+            <span class="section-label">
+                YOUR BOOKING
+            </span>
+
+            <h2>
+                Service Summary
+            </h2>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    QS
+                </div>
+
+                <div class="summary-info">
+
+                    <span>
+                        SELECTED SERVICE
+                    </span>
+
+                    <h3 id="summaryService">
+                        Choose a service
+                    </h3>
+
+                    <p>
+                        Trusted QuickServe Professional
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="summary-line">
+
+                <span>
+                    Date
+                </span>
+
+                <strong id="summaryDate">
+                    Not selected
+                </strong>
+
+            </div>
+
+
+            <div class="summary-line">
+
+                <span>
+                    Time
+                </span>
+
+                <strong id="summaryTime">
+                    Not selected
+                </strong>
+
+            </div>
+
+
+            <div class="summary-line">
+
+                <span>
+                    Booking Type
+                </span>
+
+                <strong>
+                    Home Service
+                </strong>
+
+            </div>
+
+
+            <div class="secure-box">
+
+                <span class="secure-icon">
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong>
+                        Safe & Trusted
+                    </strong>
+
+                    <p>
+                        Your booking details are handled securely.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <div class="footer-logo">
+                <span class="logo-circle">
+                    QS
+                </span>
+
+                QuickServe
+            </div>
+
+            <p>
+                Connecting customers with trusted
+                local professionals.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="providers.html">
+                Providers
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 QuickServe. All rights reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="booking.js">
+</script>
+
+</body>
+</html>

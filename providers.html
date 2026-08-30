@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuickServe | Providers</title>
+
+    <link rel="stylesheet" href="providers.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+        <span class="logo-circle">QS</span>
+        <span>QuickServe</span>
+    </a>
+
+
+    <!-- Hamburger -->
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="hamburger">
+        ☰
+    </label>
+
+
+    <!-- Navigation -->
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="services.html">Services</a>
+        </li>
+
+        <li>
+            <a href="providers.html">Providers</a>
+        </li>
+
+        <li>
+            <a href="about.html">About</a>
+        </li>
+
+        <li>
+            <a href="index.html#contact">Contact</a>
+        </li>
+
+    </ul>
+
+
+    <!-- Auth -->
+    <div class="auth-buttons">
+
+        <a href="login.html" class="login-btn">
+            Login
+        </a>
+
+        <a href="signup.html" class="signup-btn">
+            Sign Up
+        </a>
+
+    </div>
+
+</nav>
+    </header>
+
+
+
+    <!-- ================= PROVIDERS HERO ================= -->
+
+    <section class="providers-hero">
+
+        <div class="providers-heading">
+
+            <span>OUR PROFESSIONALS</span>
+
+            <h1>
+                Find Trusted<br>
+                Local Providers
+            </h1>
+
+            <p>
+                Discover reliable professionals near you.
+                Compare ratings, experience and prices,
+                then choose the right person for your needs.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search providers or services..."
+            >
+
+            <button>
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PROVIDERS ================= -->
+
+    <section class="providers">
+
+        <div class="section-top">
+
+            <div>
+
+                <span class="section-label">
+                    PROFESSIONALS
+                </span>
+
+                <h2>
+                    Meet Our Providers
+                </h2>
+
+            </div>
+
+
+            <!-- FILTER -->
+
+            <div class="filters">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="cleaning"
+                >
+                    Cleaning
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="plumbing"
+                >
+                    Plumbing
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="electrical"
+                >
+                    Electrical
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="beauty"
+                >
+                    Beauty
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="repair"
+                >
+                    Repair
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= PROVIDER CARDS ================= -->
+
+        <div class="provider-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="provider-card" data-category="cleaning">
+
+                <div class="provider-image">
+
+                    <img
+                        src="girl1.jpg"
+                        alt="Cleaning professional"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                </div>
+
+                <div class="provider-info">
+
+                    <div class="provider-name">
+
+                        <h3>
+                            Sarah Ahmed
+                        </h3>
+
+                        <span>
+                            ⭐ 4.9
+                        </span>
+
+                    </div>
+
+                    <p class="service">
+                        Home Cleaning
+                    </p>
+
+                    <p class="location">
+                        📍 Karachi
+                    </p>
+
+                    <div class="provider-meta">
+
+                        <span>
+                            5+ Years
+                        </span>
+
+                        <span>
+                            From Rs. 1,500
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="provider-profile.html"
+                        class="profile-btn"
+                    >
+                        View Profile →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 2 -->
+
+            <div class="provider-card" data-category="plumbing">
+
+                <div class="provider-image">
+
+                    <img
+                        src="plumbing.jpg"
+                        alt="Plumber"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                </div>
+
+                <div class="provider-info">
+
+                    <div class="provider-name">
+
+                        <h3>
+                            Ali Hassan
+                        </h3>
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                    </div>
+
+                    <p class="service">
+                        Plumbing
+                    </p>
+
+                    <p class="location">
+                        📍 Karachi
+                    </p>
+
+                    <div class="provider-meta">
+
+                        <span>
+                            7+ Years
+                        </span>
+
+                        <span>
+                            From Rs. 2,000
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="profile1.html"
+                        class="profile-btn"
+                    >
+                        View Profile →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 3 -->
+
+            <div class="provider-card" data-category="electrical">
+
+                <div class="provider-image">
+
+                    <img
+                        src="electrical.jpg"
+                        alt="Electrician"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                </div>
+
+                <div class="provider-info">
+
+                    <div class="provider-name">
+
+                        <h3>
+                            Usman Malik
+                        </h3>
+
+                        <span>
+                            ⭐ 4.9
+                        </span>
+
+                    </div>
+
+                    <p class="service">
+                        Electrical Work
+                    </p>
+
+                    <p class="location">
+                        📍 Karachi
+                    </p>
+
+                    <div class="provider-meta">
+
+                        <span>
+                            8+ Years
+                        </span>
+
+                        <span>
+                            From Rs. 1,800
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="profile2.html"
+                        class="profile-btn"
+                    >
+                        View Profile →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 4 -->
+
+            <div class="provider-card" data-category="beauty">
+
+                <div class="provider-image">
+
+                    <img
+                        src="girl2.jpg"
+                        alt="Beauty professional"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                </div>
+
+                <div class="provider-info">
+
+                    <div class="provider-name">
+
+                        <h3>
+                            Ayesha Khan
+                        </h3>
+
+                        <span>
+                            ⭐ 4.9
+                        </span>
+
+                    </div>
+
+                    <p class="service">
+                        Beauty & Makeup
+                    </p>
+
+                    <p class="location">
+                        📍 Karachi
+                    </p>
+
+                    <div class="provider-meta">
+
+                        <span>
+                            6+ Years
+                        </span>
+
+                        <span>
+                            From Rs. 2,500
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="profile3.html"
+                        class="profile-btn"
+                    >
+                        View Profile →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 5 -->
+
+            <div class="provider-card" data-category="repair">
+
+                <div class="provider-image">
+
+                    <img
+                        src="boy5.jpg"
+                        alt="Repair professional"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                </div>
+
+                <div class="provider-info">
+
+                    <div class="provider-name">
+
+                        <h3>
+                            Hamza Tariq
+                        </h3>
+
+                        <span>
+                            ⭐ 4.7
+                        </span>
+
+                    </div>
+
+                    <p class="service">
+                        Appliance Repair
+                    </p>
+
+                    <p class="location">
+                        📍 Karachi
+                    </p>
+
+                    <div class="provider-meta">
+
+                        <span>
+                            6+ Years
+                        </span>
+
+                        <span>
+                            From Rs. 1,200
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="profile4.html"
+                        class="profile-btn"
+                    >
+                        View Profile →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 6 -->
+
+            <div class="provider-card" data-category="cleaning">
+
+                <div class="provider-image">
+
+                    <img
+                        src="girl3.jpg"
+                        alt="Cleaning professional"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                </div>
+
+                <div class="provider-info">
+
+                    <div class="provider-name">
+
+                        <h3>
+                            Fatima Noor
+                        </h3>
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                    </div>
+
+                    <p class="service">
+                        Deep Cleaning
+                    </p>
+
+                    <p class="location">
+                        📍 Karachi
+                    </p>
+
+                    <div class="provider-meta">
+
+                        <span>
+                            4+ Years
+                        </span>
+
+                        <span>
+                            From Rs. 1,800
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="profile5.html"
+                        class="profile-btn"
+                    >
+                        View Profile →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 7 -->
+
+            <div class="provider-card" data-category="plumbing">
+
+                <div class="provider-image">
+
+                    <img
+                        src="boy3.jpg"
+                        alt="Plumbing professional"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                </div>
+
+                <div class="provider-info">
+
+                    <div class="provider-name">
+
+                        <h3>
+                            Bilal Ahmed
+                        </h3>
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                    </div>
+
+                    <p class="service">
+                        Plumbing & Maintenance
+                    </p>
+
+                    <p class="location">
+                        📍 Karachi
+                    </p>
+
+                    <div class="provider-meta">
+
+                        <span>
+                            9+ Years
+                        </span>
+
+                        <span>
+                            From Rs. 1,500
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="profile6.html"
+                        class="profile-btn"
+                    >
+                        View Profile →
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 8 -->
+
+            <div class="provider-card" data-category="electrical">
+
+                <div class="provider-image">
+
+                    <img
+                        src="boy2.jpg"
+                        alt="Electrical professional"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                </div>
+
+                <div class="provider-info">
+
+                    <div class="provider-name">
+
+                        <h3>
+                            Ahmed Raza
+                        </h3>
+
+                        <span>
+                            ⭐ 4.9
+                        </span>
+
+                    </div>
+
+                    <p class="service">
+                        Electrical Repair
+                    </p>
+
+                    <p class="location">
+                        📍 Karachi
+                    </p>
+
+                    <div class="provider-meta">
+
+                        <span>
+                            10+ Years
+                        </span>
+
+                        <span>
+                            From Rs. 2,000
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="profile7.html"
+                        class="profile-btn"
+                    >
+                        View Profile →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-top">
+
+
+        <div class="footer-brand">
+
+            <a href="#" class="logo">
+
+                <span class="logo-circle">
+                    QS
+                </span>
+
+                <span>
+                    QuickServe
+                </span>
+
+            </a>
+
+            <p>
+                Connecting customers with
+                trusted local professionals.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#providers">
+                Providers
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#">
+                How It Works
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Account
+            </h4>
+
+            <a href="#">
+                Login
+            </a>
+
+            <a href="#">
+                Sign Up
+            </a>
+
+            <a href="#">
+                Dashboard
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 QuickServe. All rights reserved.
+        </p>
+
+        <p>
+            Built for FemHackathon
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+    <script src="providers.js"></script>
+
+</body>
+</html>
